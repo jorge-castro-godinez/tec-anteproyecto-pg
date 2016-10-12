@@ -1,0 +1,133 @@
+%% ---------------------------------------------------------------------------
+%% proposal.tex
+%%
+%% Research Proposal, main document.
+%%
+%% ---------------------------------------------------------------------------
+\documentclass[12pt,letterpaper]{article}
+\usepackage[spanish]{babel} 
+\usepackage[latin1]{inputenc}
+
+% include this if you want to import graphics files with /includegraphics
+\usepackage{anysize}
+\marginsize{2.5cm}{2.5cm}{1cm}{1cm}
+\usepackage{textcomp}
+\usepackage{url}
+\bibliographystyle{unsrt}
+\usepackage{graphics}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage{slashbox}
+
+\usepackage{tikz}
+% Color and strikethrough
+\usepackage{color}
+\usepackage{soul}
+
+\usepackage{sectsty}
+\allsectionsfont{\sffamily}
+
+\definecolor{dblue}{RGB}{0,102,153}
+\newcommand{\dB}[1]{\textcolor{dblue}{\textbf{#1}}}
+
+\usepackage{longtable}
+\usepackage{ifpdf}
+
+\setlength{\parskip}{1em}
+
+% Nombre del Estudiante
+\newcommand{\scriptAuthor}{Nombre Apellido}
+
+% Tí­tulo de la tesis
+\newcommand{\scriptTitle}{Titulo Tentativo} 
+
+
+% Keywords
+\newcommand{\scriptKeywords}{key, words, ...}
+
+% Para el PDF (cambiar si se desea otras cosas a lo indicado arriba
+\newcommand{\pdfAuthor}{\scriptAuthor}
+\newcommand{\pdfTitle}{\scriptTitle} 
+\newcommand{\pdfKeywords}{\scriptKeywords}
+
+
+\begin{document}
+ 
+ \graphicspath{{./}{./fig/}}
+
+ \input{./titlepage.tex}
+
+%  \tableofcontents
+
+ \clearpage
+
+% Entorno del proyecto
+\section{Entorno del proyecto}
+
+%
+
+
+% Definición del problema
+\section{Definición del problema}
+
+\subsection{Generalidades}
+
+\subsection{Síntesis del problema}
+%
+
+
+% Enfoque de la solución
+\section{Enfoque de la solución}
+%Example of a reference \cite{Venkataramani15_DAC}.
+%
+
+
+% Hipótesis?
+\section{Hipótesis}
+%
+
+
+% Meta
+\section{Meta}
+%
+
+
+% Objetivos
+\section{Objetivo general}
+%
+
+
+\section{Objetivos específicos}
+%
+
+
+
+\section{Procedimiento para la ejecución del proyecto}
+
+
+
+\section{Cronograma de actividades}
+
+
+
+\section{Uso de recursos}
+
+
+
+\section{Presupuesto}
+
+
+
+\section{Anexos}
+
+
+
+
+% Referencias del Background y el Related Work
+\bibliographystyle{sty/plainurl}
+\bibliography{references}
+
+
+
+\end{document}
+
